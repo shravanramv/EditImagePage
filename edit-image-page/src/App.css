@@ -48,15 +48,24 @@ h1 {
 
 .upload-button {
   padding: 15px 30px;
-  font-size: 20px;
+  font-size: 16px;
   border: 1px solid #00bfff;
   border-radius: 5px;
   cursor: pointer;
   background-color: #00bfff;
   color: white;
   transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
 }
 
 .upload-button:hover {
   background-color: #87ceeb;
+}
+
+.uploaded-image {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
