@@ -1,0 +1,62 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #87ceeb, #00bfff);
+}
+
+.content {
+  background-color: white;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: appear 1s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes appear {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 2em;
+  color: #00bfff;
+  margin-bottom: 30px;
+}
+
+.upload-button {
+  padding: 15px 30px;
+  font-size: 20px;
+  border: 1px solid #00bfff;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #00bfff;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #87ceeb;
+}
