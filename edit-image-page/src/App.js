@@ -77,7 +77,7 @@ function UploadButton() {
             Upload Another Image
           </button>
           <button className="action-button" onClick={handleSelectBackground}>
-            Select Background to be Replaced
+            Remove Background
           </button>
         </>
       )}
